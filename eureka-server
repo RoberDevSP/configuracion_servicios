@@ -1,11 +1,11 @@
 spring:
   thymeleaf:
-    enabled: false     # Disable Thymeleaf para el correcto funcionamioento de eureka
+    enabled: false
 server:
   port: 8761
 eureka:
   instance:
     hostname: localhost
-  client:  # Not a client, don't register with yourself
+  client:
     registerWithEureka: false
     fetchRegistry: false
