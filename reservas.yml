@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/viajes?useSSL=false
+    username: root
+    password: auter4
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server: 
+  port: 8100
+eureka: 
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
