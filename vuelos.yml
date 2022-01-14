@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/viajes?useSSL=false
+    url: jdbc:mysql://localhost:3306/viajes?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: auter4
   jpa:
